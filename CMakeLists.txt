@@ -15,6 +15,13 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
+set(OPENGL_opengl_LIBRARY "/usr/lib/x86_64-linux-gnu/libGL.so.1")
+set(OPENGL_glx_LIBRARY "/usr/lib/x86_64-linux-gnu/libGLX.so.0")
+set(OPENGL_egl_LIBRARY "/usr/lib/x86_64-linux-gnu/libEGL.so.1")
+
+find_package(OpenGL COMPONENTS EGL REQUIRED)
+
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nav_msgs REQUIRED)
