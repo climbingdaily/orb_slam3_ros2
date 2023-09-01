@@ -13,7 +13,7 @@ This repository is ROS2 wrapping to use ORB_SLAM3
   - OpenCV 4.5.4
 
 - Build ORB_SLAM3
-  - Go to this [repo](https://github.com/zang09/ORB-SLAM3-STEREO-FIXED) and follow build instruction.
+  - Go to this [repo](https://github.com/climbingdaily/ORB-SLAM3-STEREO-FIXED) and follow build instruction.
 
 - Install related ROS2 package
 ```
